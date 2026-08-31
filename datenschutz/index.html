@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung — PASSY OS Career Runtime</title>
+<meta name="description" content="Datenschutzerklärung für PASSY OS Career Runtime: welche Google-Daten verarbeitet werden, zu welchem Zweck und wo die Verarbeitung stattfindet.">
+<style>
+  :root{
+    --bg:#fbfaf8; --fg:#1c1b19; --muted:#5f5c57; --line:#e2ded7; --card:#ffffff; --accent:#3a5a78;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141414; --fg:#eceae6; --muted:#a3a09a; --line:#2c2c2c; --card:#1c1c1c; --accent:#8fb3d1; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:4rem 1.5rem 5rem}
+  header{border-bottom:1px solid var(--line); padding-bottom:2rem; margin-bottom:2.5rem}
+  .kicker{font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 .6rem}
+  .kicker a{color:var(--muted); text-decoration:none}
+  .kicker a:hover{text-decoration:underline}
+  h1{font-size:1.75rem; line-height:1.25; margin:0 0 .6rem; font-weight:650; letter-spacing:-.01em}
+  .lede{font-size:.95rem; color:var(--muted); margin:0}
+  h2{font-size:1.02rem; margin:2.4rem 0 .7rem; font-weight:650; letter-spacing:-.005em}
+  h3{font-size:.95rem; margin:1.6rem 0 .5rem; font-weight:650}
+  p{margin:0 0 1rem}
+  ul{margin:0 0 1rem; padding-left:1.15rem}
+  li{margin:.4rem 0}
+  table{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.94rem}
+  th,td{text-align:left; vertical-align:top; padding:.6rem .7rem; border-bottom:1px solid var(--line)}
+  th{font-weight:650; color:var(--muted); font-size:.82rem; text-transform:uppercase; letter-spacing:.06em}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1.15rem 1.3rem; margin:1.4rem 0}
+  .card p:last-child{margin-bottom:0}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.9em; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:.08em .35em}
+  a{color:var(--accent)}
+  .en{font-size:.92rem; color:var(--muted)}
+  footer{border-top:1px solid var(--line); margin-top:3rem; padding-top:1.4rem; font-size:.9rem; color:var(--muted)}
+  footer a{margin-right:1.2rem; display:inline-block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker"><a href="/">PASSY OS Career Runtime</a></p>
+  <h1>Datenschutzerklärung</h1>
+  <p class="lede">Stand: 31. August 2026</p>
+</header>
+
+<h2>1 · Gegenstand</h2>
+<p>
+  Diese Erklärung beschreibt, wie die Anwendung <strong>PASSY OS Career Runtime</strong> mit Daten aus dem
+  Google-Konto der Betreiberin umgeht. Die Anwendung ist ein privates Werkzeug, das ausschließlich von der
+  Betreiberin selbst und für ihren eigenen Bewerbungsprozess genutzt wird. Es gibt keine weiteren Nutzerinnen
+  oder Nutzer, keine Registrierung und kein öffentliches Angebot.
+</p>
+
+<h2>2 · Verantwortlich</h2>
+<p>
+  Verantwortlich für die Anwendung ist die Betreiberin von PASSY OS.
+  Kontakt: <strong>[KONTAKT-E-MAIL-ADRESSE EINTRAGEN]</strong>
+</p>
+
+<h2>3 · Welche Google-Daten verarbeitet werden</h2>
+<p>
+  Die Anwendung greift auf das Gmail-Konto der Betreiberin zu. Die von Google angeforderten Berechtigungen
+  (OAuth-Scopes) sind derzeit ausschließlich:
+</p>
+<table>
+  <tr><th>Scope</th><th>Was er erlaubt</th></tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/gmail.readonly</code></td>
+    <td>Lesenden Zugriff auf E-Mails und Gmail-Einstellungen.</td>
+  </tr>
+  <tr>
+    <td><code>https://www.googleapis.com/auth/gmail.labels</code></td>
+    <td>Sehen und Bearbeiten der Gmail-Labeldefinitionen.</td>
+  </tr>
+</table>
+<p>
+  Im Regelbetrieb ruft die Anwendung nur <strong>Metadaten</strong> einer Nachricht ab: Absenderadresse, Betreff,
+  Datum sowie Nachrichten- und Konversationskennungen. Der Nachrichtentext wird dabei nicht abgerufen.
+</p>
+<p>
+  Die Abfragen sind eingegrenzt: Es werden keine offenen Postfachabfragen gestellt, sondern feldgebundene Suchen
+  über festgelegte Absenderadressen, Arbeitgeberdomains und einen begrenzten Betreffwortschatz, die sich auf den
+  Bewerbungskontext beziehen.
+</p>
+
+<h2>4 · Zweck der Verarbeitung</h2>
+<p>Die Verarbeitung dient ausschließlich diesen Zwecken:</p>
+<ul>
+  <li>eingehende Nachrichten dem passenden eigenen Bewerbungsvorgang zuzuordnen,</li>
+  <li>den Stand eines Bewerbungsvorgangs nachvollziehbar fortzuschreiben,</li>
+  <li>der Betreiberin eine Übersicht darüber zu geben, welcher Vorgang Aufmerksamkeit braucht.</li>
+</ul>
+<p>Eine andere Verwendung findet nicht statt.</p>
+
+<h2>5 · Wo verarbeitet wird</h2>
+<p>
+  Die automatisierte Runtime läuft <strong>lokal auf dem persönlichen Mac der Betreiberin</strong>. Sie ruft die
+  Daten direkt von den Google-Servern ab und verarbeitet sie auf diesem Gerät. Es gibt keinen eigenen Server und
+  keine Übermittlung der Gmail-Daten an einen fremden Dienst zum Zweck des Betriebs.
+</p>
+<p>
+  Die Zugangsdaten für den Google-Zugriff werden ausschließlich in der macOS-Keychain dieses Geräts gespeichert.
+</p>
+
+<h2>6 · Keine autonome Sendefähigkeit</h2>
+<div class="card">
+  <p>
+    Die angeforderten Berechtigungen erlauben es der Anwendung <strong>nicht</strong>, E-Mails zu senden, zu
+    beantworten, weiterzuleiten, Entwürfe anzulegen, Nachrichten zu löschen oder als Spam zu markieren.
+    Die automatisiert laufende Runtime kann in fremdem Namen keine Nachricht versenden.
+  </p>
+</div>
+
+<h2>7 · Keine Weitergabe, kein Verkauf</h2>
+<ul>
+  <li>Aus dem Google-Konto stammende Daten werden <strong>nicht verkauft</strong>.</li>
+  <li>Sie werden <strong>nicht für Werbung</strong> oder Profilbildung verwendet.</li>
+  <li>Sie werden <strong>nicht an Dritte weitergegeben</strong>.</li>
+  <li>Sie werden nicht zum Trainieren von Modellen zur Verfügung gestellt.</li>
+</ul>
+<p>
+  Zur Entwicklung und Wartung der Anwendung setzt die Betreiberin persönlich KI-gestützte Entwicklungswerkzeuge
+  ein. Dabei können ihr selbst einzelne Metadaten aus dem eigenen Postfach angezeigt werden. Dies geschieht durch
+  die Betreiberin und für ihr eigenes Postfach; es ist nicht Teil des automatisierten Betriebs und betrifft keine
+  Daten dritter Personen.
+</p>
+
+<h2>8 · Speicherung und Aufbewahrung</h2>
+<p>
+  Aus dem Postfach abgeleitete Angaben werden lokal in den Vorgangsakten der Betreiberin gespeichert, soweit dies
+  für den persönlichen Betrieb von PASSY OS erforderlich ist — im Wesentlichen: welches Ereignis wann zu welchem
+  Bewerbungsvorgang eingegangen ist, mit einem Verweis auf die zugehörige Nachricht. Nachrichtentexte werden dabei
+  nicht gespeichert.
+</p>
+<p>
+  Die Aufbewahrung erfolgt so lange, wie der jeweilige Bewerbungsvorgang für die Betreiberin von Bedeutung ist.
+  Da alle Daten lokal liegen, kann die Betreiberin sie jederzeit selbst löschen.
+</p>
+
+<h2>9 · Zugriff beenden</h2>
+<p>Der Zugriff der Anwendung auf das Google-Konto kann jederzeit beendet werden:</p>
+<ul>
+  <li>über die Google-Kontoeinstellungen unter
+      <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>,</li>
+  <li>zusätzlich durch Entfernen der lokal gespeicherten Zugangsdaten auf dem Gerät.</li>
+</ul>
+<p>Danach kann die Anwendung nicht mehr auf das Postfach zugreifen.</p>
+
+<h2>10 · Umgang mit Google-Nutzerdaten</h2>
+<p>
+  Die Nutzung und Weitergabe von Informationen, die über Google-APIs empfangen werden, erfolgt im Einklang mit der
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services
+  User Data Policy</a> einschließlich der darin enthaltenen Limited-Use-Anforderungen.
+</p>
+
+<h2>11 · Änderungen</h2>
+<p>
+  Ändert sich der technische Stand der Anwendung — insbesondere die angeforderten Berechtigungen oder der Ort der
+  Verarbeitung — wird diese Erklärung entsprechend angepasst.
+</p>
+
+<h2 id="en">In English — summary</h2>
+<p class="en">
+  PASSY OS Career Runtime is a private application used solely by its operator to organise her own job
+  applications. It requests only the Google OAuth scopes <code>gmail.readonly</code> and <code>gmail.labels</code>.
+  These scopes do not permit sending, replying, forwarding, drafting or deleting mail. In normal operation the
+  application retrieves message metadata only — sender, subject, date and identifiers — not message bodies.
+  Processing runs locally on the operator's personal Mac; there is no server component. Data obtained from the
+  Google account is not sold, not used for advertising, not shared with third parties and not used to train
+  models. Use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services
+  User Data Policy</a>, including the Limited Use requirements. Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>.
+</p>
+
+<footer>
+  <a href="/">Startseite</a>
+  <a href="/nutzungsbedingungen/">Nutzungsbedingungen</a>
+</footer>
+
+</div>
+</body>
+</html>

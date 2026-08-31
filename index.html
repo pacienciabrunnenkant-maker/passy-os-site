@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PASSY OS Career Runtime</title>
+<meta name="description" content="PASSY OS Career Runtime — private, persönlich genutzte Anwendung zur Unterstützung des eigenen Bewerbungsprozesses.">
+<style>
+  :root{
+    --bg:#fbfaf8; --fg:#1c1b19; --muted:#5f5c57; --line:#e2ded7; --card:#ffffff; --accent:#3a5a78;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141414; --fg:#eceae6; --muted:#a3a09a; --line:#2c2c2c; --card:#1c1c1c; --accent:#8fb3d1; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:44rem; margin:0 auto; padding:4rem 1.5rem 5rem}
+  header{border-bottom:1px solid var(--line); padding-bottom:2rem; margin-bottom:2.5rem}
+  .kicker{font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin:0 0 .6rem}
+  h1{font-size:1.9rem; line-height:1.25; margin:0 0 .7rem; font-weight:650; letter-spacing:-.01em}
+  .lede{font-size:1.05rem; color:var(--muted); margin:0}
+  h2{font-size:1.02rem; margin:2.4rem 0 .7rem; font-weight:650; letter-spacing:-.005em}
+  p{margin:0 0 1rem}
+  ul{margin:0 0 1rem; padding-left:1.15rem}
+  li{margin:.35rem 0}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1.15rem 1.3rem; margin:1.4rem 0}
+  .card p:last-child{margin-bottom:0}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.9em; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:.08em .35em}
+  a{color:var(--accent)}
+  footer{border-top:1px solid var(--line); margin-top:3rem; padding-top:1.4rem; font-size:.9rem; color:var(--muted)}
+  footer a{margin-right:1.2rem; display:inline-block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">PASSY OS</p>
+  <h1>PASSY OS Career Runtime</h1>
+  <p class="lede">Eine private, ausschließlich persönlich genutzte Anwendung zur Unterstützung des eigenen Bewerbungsprozesses.</p>
+</header>
+
+<h2>Was diese Anwendung ist</h2>
+<p>
+  PASSY OS Career Runtime ist ein privates Werkzeug, das die Betreiberin für sich selbst entwickelt und
+  ausschließlich für den eigenen Gebrauch einsetzt. Es ist <strong>kein öffentliches Produkt</strong>, es gibt keine
+  Registrierung, keine weiteren Nutzerkonten und keinen Vertrieb.
+</p>
+
+<h2>Aktueller Anwendungsfall: Career OS</h2>
+<p>
+  Career OS ist der erste und derzeit einzige Anwendungsfall. Es unterstützt die Betreiberin dabei, ihre eigenen
+  Bewerbungen zu strukturieren: welche Bewerbung wurde wann versendet, welche Rückmeldung ist eingegangen, welcher
+  Vorgang wartet noch auf eine Antwort.
+</p>
+<p>
+  Dafür liest die Anwendung das Gmail-Postfach der Betreiberin und ordnet eingehende Nachrichten dem passenden
+  eigenen Bewerbungsvorgang zu.
+</p>
+
+<h2>Wie die Anwendung arbeitet</h2>
+<ul>
+  <li><strong>Lesender Zugriff.</strong> Die Anwendung fordert von Google ausschließlich die Berechtigungen
+      <code>gmail.readonly</code> und <code>gmail.labels</code> an.</li>
+  <li><strong>Keine Sendefähigkeit.</strong> Die angeforderten Berechtigungen erlauben es der Anwendung nicht,
+      E-Mails zu senden, zu beantworten, weiterzuleiten, Entwürfe anzulegen oder Nachrichten zu löschen.</li>
+  <li><strong>Lokale Verarbeitung.</strong> Die automatisierte Runtime läuft auf dem persönlichen Mac der Betreiberin.
+      Sie verarbeitet die Daten dort und überträgt sie nicht an einen eigenen oder fremden Server.</li>
+  <li><strong>Sparsamer Zugriff.</strong> Abgerufen werden im Regelfall nur Metadaten einer Nachricht —
+      Absender, Betreff, Datum und Kennungen — nicht der Nachrichtentext.</li>
+</ul>
+
+<div class="card">
+  <p>
+    <strong>Keine Weitergabe, kein Verkauf.</strong> Aus Google-Konten stammende Daten werden nicht verkauft,
+    nicht für Werbung verwendet und nicht an Dritte weitergegeben. Einzelheiten stehen in der
+    <a href="/datenschutz/">Datenschutzerklärung</a>.
+  </p>
+</div>
+
+<h2>Zweck dieser Seite</h2>
+<p>
+  Diese Seite beschreibt die Anwendung und erfüllt die Anforderungen von Google an die Startseite einer
+  Anwendung, die Google-APIs nutzt. Sie ist bewusst knapp gehalten und stellt keine vollständige
+  PASSY-OS-Website dar.
+</p>
+
+<footer>
+  <a href="/datenschutz/">Datenschutzerklärung</a>
+  <a href="/nutzungsbedingungen/">Nutzungsbedingungen</a>
+</footer>
+
+</div>
+</body>
+</html>
